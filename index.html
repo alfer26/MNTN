@@ -7,28 +7,291 @@
         <link rel="icon" href="./images/MNTN.ico" />
         <title>MNTN</title>
     </head>
-    <body>
-        <header></header>
+    <body style="visibility: hidden">
+        <div id="shading"></div>
+        <header id="start">
+            <p class="logo">MNT<span>N</span></p>
+            <nav>
+                <p>Equipment</p>
+                <p>About us</p>
+                <p>Blog</p>
+            </nav>
+            <div>
+                <div>
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <defs>
+                            <filter id="hoverAcc">
+                                <feFlood
+                                    flood-color="#fbd784"
+                                    result="colour"
+                                />
+                                <feComposite
+                                    operator="in"
+                                    in="colour"
+                                    in2="SourceAlpha"
+                                />
+                            </filter>
+                            <filter id="activeAcc">
+                                <feFlood
+                                    flood-color="#fab005"
+                                    result="colour"
+                                />
+                                <feComposite
+                                    operator="in"
+                                    in="colour"
+                                    in2="SourceAlpha"
+                                />
+                            </filter>
+                        </defs>
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+                <p>Account</p>
+            </div>
+            <img id="menuButton" src="./images/menu.png" alt="Menu" />
+        </header>
         <section class="title">
             <div>
                 <div></div>
-                <div>A HIKING GUIDE</div>
+                <p>A HIKING GUIDE</p>
             </div>
             <p>Be Prepared For The Mountains And Beyond!</p>
             <div>
                 <div>scroll down</div>
-                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="white"/>
-                    </svg>
+                <svg
+                    width="16"
+                    height="24"
+                    viewBox="0 0 16 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z"
+                        fill="white"
+                    />
+                </svg>
             </div>
         </section>
-        <section class='social'></section>
-        <section class="slider"></section>
+        <section class="social">
+            <p>Follow us</p>
+            <div>
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <defs>
+                        <filter id="hoverSoc">
+                            <feFlood flood-color="#fbd784" result="colour" />
+                            <feComposite
+                                operator="in"
+                                in="colour"
+                                in2="SourceAlpha"
+                            />
+                        </filter>
+                        <filter id="activeSoc">
+                            <feFlood flood-color="#fab005" result="colour" />
+                            <feComposite
+                                operator="in"
+                                in="colour"
+                                in2="SourceAlpha"
+                            />
+                        </filter>
+                    </defs>
+                    <path
+                        d="M5.50033 0.666687H12.5003C15.1697 0.666687 17.3337 2.83065 17.3337 5.50002V12.5C17.3337 15.1694 15.1697 17.3333 12.5003 17.3333H5.50033C2.83095 17.3333 0.666992 15.1694 0.666992 12.5V5.50002C0.666992 2.83065 2.83095 0.666687 5.50033 0.666687ZM5.33366 2.33334C3.6768 2.33334 2.33366 3.67649 2.33366 5.33334V12.6667C2.33366 14.3235 3.6768 15.6667 5.33366 15.6667H12.667C14.3238 15.6667 15.667 14.3235 15.667 12.6667V5.33334C15.667 3.67649 14.3238 2.33334 12.667 2.33334H5.33366ZM13.3753 3.58334C13.9507 3.58334 14.417 4.04971 14.417 4.625C14.417 5.2003 13.9507 5.66667 13.3753 5.66667C12.8 5.66667 12.3337 5.2003 12.3337 4.625C12.3337 4.04971 12.8 3.58334 13.3753 3.58334ZM9.00033 4.83334C11.3015 4.83334 13.167 6.69882 13.167 9C13.167 11.3012 11.3015 13.1667 9.00033 13.1667C6.69913 13.1667 4.83366 11.3012 4.83366 9C4.83366 6.69882 6.69913 4.83334 9.00033 4.83334ZM9.00033 6.5C7.61958 6.5 6.50033 7.61934 6.50033 9C6.50033 10.3808 7.61958 11.5 9.00033 11.5C10.3811 11.5 11.5003 10.3808 11.5003 9C11.5003 7.61934 10.3811 6.5 9.00033 6.5Z"
+                        fill="white"
+                    />
+                </svg>
+            </div>
+            <div>
+                <svg
+                    width="18"
+                    height="15"
+                    viewBox="0 0 18 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <defs>
+                        <filter id="hoverSoc">
+                            <feFlood flood-color="#fbd784" result="colour" />
+                            <feComposite
+                                operator="in"
+                                in="colour"
+                                in2="SourceAlpha"
+                            />
+                        </filter>
+                        <filter id="activeSoc">
+                            <feFlood flood-color="#fab005" result="colour" />
+                            <feComposite
+                                operator="in"
+                                in="colour"
+                                in2="SourceAlpha"
+                            />
+                        </filter>
+                    </defs>
+                    <path
+                        d="M17.7162 2.01031C17.0749 2.29477 16.3855 2.48701 15.6622 2.57345C16.4004 2.13084 16.9676 1.42998 17.2346 0.594811C16.5435 1.00469 15.7782 1.30231 14.9635 1.46266C14.3112 0.767595 13.3818 0.333328 12.3531 0.333328C10.378 0.333328 8.77661 1.93455 8.77661 3.90962C8.77661 4.18991 8.80828 4.46288 8.86928 4.72466C5.89695 4.5755 3.26166 3.15169 1.49778 0.98792C1.18991 1.51612 1.01355 2.13046 1.01355 2.7859C1.01355 4.0267 1.6449 5.12135 2.60456 5.76274C2.01836 5.74408 1.46684 5.58325 0.984697 5.31538C0.984355 5.33032 0.984355 5.34525 0.984355 5.36033C0.984355 7.09316 2.21715 8.53858 3.8532 8.86716C3.55311 8.94891 3.23715 8.99266 2.91099 8.99266C2.68054 8.99266 2.4565 8.97016 2.23809 8.9285C2.69321 10.3492 4.01398 11.3833 5.57899 11.4121C4.355 12.3714 2.81293 12.9432 1.13731 12.9432C0.848638 12.9432 0.563963 12.9262 0.28418 12.8931C1.8669 13.9078 3.7468 14.5 5.76645 14.5C12.3447 14.5 15.942 9.05041 15.942 4.32431C15.942 4.16928 15.9385 4.01504 15.9316 3.86162C16.6304 3.35738 17.2368 2.72751 17.7162 2.01031Z"
+                        fill="white"
+                    />
+                </svg>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider_title">
+                <a href="#start">Start</a>
+                <a href="#c01">01</a>
+                <a href="#c02">02</a>
+                <a href="#c03">03</a>
+            </div>
+            <div class="slider_scroll">
+                <div class="slider_indicator"></div>
+                <div class="slider_BG"></div>
+            </div>
+        </section>
         <div class="content">
-            <section></section>
-            <section></section>
-            <section></section>
-            <footer></footer>
+            <section id="c01">
+                <p>01</p>
+                <div class="text">
+                    <div>
+                        <div></div>
+                        <p>GET STARTED</p>
+                    </div>
+                    <p>What level of&#160; hiker are you?</p>
+                    <p>
+                        Determining what level of hiker you are can be an
+                        important tool when planning future hikes. This hiking
+                        level guide will help you plan hikes according to
+                        different hike ratings set by various websites like All
+                        Trails and Modern Hiker. What type of hiker are you –
+                        novice, moderate, advanced moderate, expert, or expert
+                        backpacker?
+                    </p>
+                    <div>
+                        <p>read more</p>
+                        <svg
+                            width="24"
+                            height="16"
+                            viewBox="0 0 24 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"
+                                fill="#FBD784"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </section>
+            <section id="c02">
+                <p>02</p>
+                <div class="text">
+                    <div>
+                        <div></div>
+                        <p>HIKING ESSENTIALS</p>
+                    </div>
+                    <p>Picking the right Hiking Gear!</p>
+                    <p>
+                        The nice thing about beginning hiking is that you don’t
+                        really need any special gear, you can probably get away
+                        with things you already have. <br />
+                        Let’s start with clothing. A typical mistake hiking
+                        beginners make is wearing jeans and regular clothes,
+                        which will get heavy and chafe wif they get sweaty or
+                        wet.
+                    </p>
+                    <div>
+                        <p>read more</p>
+                        <svg
+                            width="24"
+                            height="16"
+                            viewBox="0 0 24 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"
+                                fill="#FBD784"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </section>
+            <section id="c03">
+                <p>03</p>
+                <div class="text">
+                    <div>
+                        <div></div>
+                        <p>WHERE YOU GO IS THE KEY</p>
+                    </div>
+                    <p>Understand Your Map & Timing</p>
+                    <p>
+                        To start, print out the hiking guide and map. If it’s
+                        raining, throw them in a Zip-Lock bag. Read over the
+                        guide, study the map, and have a good idea of what to
+                        expect. I like to know what my next landmark is as I
+                        hike. For example, I’ll read the guide and know that
+                        say, in a mile, I make a right turn at the junction..
+                    </p>
+                    <div>
+                        <p>read more</p>
+                        <svg
+                            width="24"
+                            height="16"
+                            viewBox="0 0 24 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z"
+                                fill="#FBD784"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </section>
+            <footer>
+                <div>
+                    <p class="logo">MNTN</p>
+                    <p>
+                        Get out there & discover your next slope, mountain &
+                        destination!
+                    </p>
+                </div>
+                <div>
+                    <h2>More on The Blog</h2>
+                    <p>About MNTN</p>
+                    <p>Contributors & Writers</p>
+                    <p>Write For Us</p>
+                    <p>Contact Us</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div>
+                    <h2>More on MNTN</h2>
+                    <p>The Team</p>
+                    <p>Jobs</p>
+                    <p>Press</p>
+                </div>
+                <p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+            </footer>
         </div>
     </body>
+    <script src="./script.js"></script>
 </html>
